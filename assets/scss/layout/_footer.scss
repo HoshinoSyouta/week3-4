@@ -1,0 +1,80 @@
+.contact {
+  &-btn:hover {
+    opacity: 0.8;
+  }
+  @include mobile-large {
+    padding: 0 14px;
+    &-btn {
+      width: 100%;
+      margin-top: 24px;
+    }
+  }
+}
+
+.pl-0 {
+  padding-left: 0 !important;
+}
+
+.ic {
+  width: 48px;
+  transition: 0.3s;
+  @include pad {
+    width: 40px;
+  }
+}
+.footer-nav {
+  a {
+    font-size: 16px;
+    @include pad {
+      padding: 12px 24px;
+    }
+  }
+}
+.ic:hover,
+.service a:hover,
+.tel a:hover,
+.mail a:hover {
+  opacity: 0.8;
+}
+@include mobile-large {
+  .footer {
+    &-nav {
+      display: none;
+    }
+  }
+
+  .h4 {
+    font-size: 16px;
+  }
+
+  span.size-48 {
+    font-size: 18px;
+  }
+
+  .ic {
+    width: 24px;
+    margin-right: 8px;
+  }
+
+  .mail {
+    margin-bottom: 24px;
+  }
+
+  .copyright {
+    flex-direction: column;
+    margin-top: 16px;
+  }
+
+  .service {
+    flex-direction: column;
+    a {
+      margin-top: 8px;
+    }
+  }
+  .p-20 {
+    padding: 40px;
+  }
+  .mb-12 {
+    margin-bottom: 24px;
+  }
+}

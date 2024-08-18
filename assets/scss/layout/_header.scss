@@ -1,0 +1,67 @@
+.logo {
+  width: 80px;
+  padding: 12px 0;
+  @include mobile-large {
+    margin-left: 12px;
+  }
+}
+.header-nav {
+  font-size: 20px;
+  a {
+    padding: 8px 32px;
+    :hover {
+      opacity: 0.8;
+    }
+    @include mobile-large {
+      padding-right: 0;
+      padding-left: 0;
+    }
+  }
+  @include mobile-large {
+    width: 100%;
+    flex-wrap: wrap;
+    li {
+      border: 1px solid #fff;
+      width: 50%;
+      text-align: center;
+      font-size: 16px;
+    }
+  }
+}
+@include mobile-large {
+  .header-wrapper {
+    flex-direction: column;
+  }
+  .h1 {
+    font-size: 24px;
+  }
+  .h2 {
+    font-size: 24px;
+  }
+  .px-sm-0 {
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+.cta-btn {
+  font-size: 20px;
+  padding: 6px 12px;
+  transition: 0.3s;
+  @include mobile-large {
+    width: 104px;
+    height: 40px;
+  }
+  :hover {
+    opacity: 0.8;
+  }
+}
+
+.fz-36 {
+  font-size: 36px;
+  @include mobile-large {
+    font-size: 16px;
+  }
+}
+.pr-0 {
+  padding-right: 0 !important;
+}

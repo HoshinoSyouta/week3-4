@@ -1,0 +1,171 @@
+.banner {
+  background: url("../assets/images/home-header.png") no-repeat;
+  background-size: cover;
+  height: calc(100vh - 80px);
+  @include pad {
+    background-position: center;
+  }
+  @include mobile-large {
+    background: url("../assets/images/home-header-sm.png") no-repeat;
+    height: 396px;
+  }
+}
+
+.proList {
+  flex-wrap: wrap;
+  li {
+    width: calc(25% - 18px);
+  }
+  @include pad {
+    li {
+      width: calc(50% - 12px);
+    }
+  }
+  @include mobile-large {
+    li {
+      width: 100%;
+      padding: 12px;
+    }
+  }
+}
+
+.classic {
+  &-list {
+    max-width: 416px;
+  }
+  @include pad {
+    flex-direction: column;
+    margin: 0 auto;
+    max-width: 336px;
+    margin-bottom: 24px;
+  }
+  @include mobile-large {
+    max-width: 348px;
+  }
+}
+
+.co-brand-list {
+  width: 50%;
+  @include pad {
+    width: 100%;
+  }
+}
+@include pad {
+  .co-brand {
+    flex-direction: column;
+    li:first-child {
+      margin-bottom: 24px;
+    }
+    @include mobile-large {
+      padding: 0 12px;
+    }
+  }
+  .guest {
+    flex-wrap: wrap;
+    justify-content: space-between;
+    @include mobile-large {
+      flex-wrap: wrap;
+      padding: 0 14px;
+    }
+  }
+}
+.co-brand-bg {
+  background: url("../assets/images/index-bg.png") no-repeat;
+  background-size: cover;
+  @include pad {
+    background: url("../assets/images/index-bg-md.png") no-repeat;
+    background-size: cover;
+  }
+}
+
+.img-1 {
+  background: url("../assets/images/home-section4-1.png") no-repeat;
+  height: 240px;
+  background-size: cover;
+  @include mobile-large {
+    height: 240px;
+    background: url("../assets/images/home-section4-1-sm.png") no-repeat;
+    background-size: cover;
+  }
+}
+
+.img-2 {
+  background: url("../assets/images/home-section4-2.png") no-repeat;
+  height: 240px;
+  background-size: cover;
+  @include mobile-large {
+    height: 240px;
+    background: url("../assets/images/home-section4-2-sm.png") no-repeat;
+    background-size: cover;
+  }
+}
+
+.guestList {
+  width: 23%;
+  border: 1px solid #dee2e6;
+  border-radius: 4px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+  .content {
+    padding: 16px;
+    height: 205px;
+  }
+  @include pad {
+    width: calc(50% - 12px);
+    border: 1px solid #dee2e6;
+    border-radius: 4px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+    margin-bottom: 24px;
+    margin-right: 0;
+  }
+  @include mobile-large {
+    width: 100%;
+    margin-right: 0;
+    margin-bottom: 16px;
+  }
+}
+.contact {
+  max-width: 636px;
+  margin: 0 auto;
+}
+
+.input-content {
+  width: 100%;
+  padding: 6px 12px;
+  border: 1px solid #000;
+  background-color: #fbf2f2;
+}
+
+textarea {
+  height: 136px;
+}
+
+.input-content::placeholder {
+  color: rgba(0, 0, 0, 0.2);
+}
+
+#checkbox {
+  margin-right: 4px;
+  width: 24px;
+  height: 24px;
+  vertical-align: middle;
+  cursor: pointer;
+}
+
+.check-text {
+  cursor: pointer;
+}
+
+.date {
+  font-size: 14px;
+  color: #707070;
+  height: auto;
+}
+
+.contact-btn {
+  width: 60%;
+  margin: 0 auto;
+  padding: 16px 0;
+  margin-top: 64px;
+  display: block;
+  transition: 0.3s;
+}
